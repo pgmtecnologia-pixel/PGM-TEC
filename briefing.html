@@ -1,0 +1,726 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Briefing do Projeto | PGM Tecnologia</title>
+  <meta name="description" content="Formulário de briefing para novos projetos de Landing Pages da PGM Tecnologia.">
+  <meta name="theme-color" content="#040A16">
+  
+  <link rel="icon" href="assets/img/pgm-brand.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/briefing.css">
+</head>
+<body>
+  <div class="site">
+    <!-- ================= HEADER ================= -->
+    <header class="nav nav--glass" id="topo">
+      <div class="wrap nav__in">
+        <a href="index.html" class="brand" aria-label="PGM Tecnologia — início">
+          <svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true"><defs><linearGradient id="lg1" x1="4" y1="30" x2="26" y2="4" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#1E6BFF"></stop><stop offset="1" stop-color="#22C3FF"></stop></linearGradient></defs><path d="M6 31c1.2-8.6 4.2-17.8 10.6-22.4C19.4 6.7 23 6 28 6c-3.4 2.6-5.6 4.4-8.6 6.4C14.2 16 9.6 22 6 31z" fill="url(#lg1)"></path><path d="M14.6 21.6c2.6-.6 6-1.6 9.2-3.6 3-1.9 4.8-4.2 4.6-7.2-.1-1.5-.7-2.8-1.6-3.6.2 3.2-1.8 6-5.2 8.2-2.4 1.6-4.9 3.2-7 6.2z" fill="#fff"></path></svg>
+          <span class="brand__word"><span class="brand__pgm">PGM</span><span class="brand__tec">tecnologia</span></span>
+        </a>
+        <div class="header-right">
+          <span class="header-title">Briefing do Projeto</span>
+          <a href="index.html" class="header-link">Voltar para o site</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <main class="briefing-main">
+      <div class="gridbg"></div>
+      <div class="glow" style="width: 520px; height: 520px; right: -120px; top: -80px; background: rgba(30,107,255,.15)"></div>
+      <div class="glow" style="width: 360px; height: 360px; left: -160px; top: 400px; background: rgba(34,195,255,.08)"></div>
+
+      <div class="wrap briefing-wrap">
+        
+        <!-- Intro -->
+        <div class="briefing-intro" id="briefing-intro">
+          <span class="eyebrow"><span class="pulse"></span>INÍCIO DO PROJETO</span>
+          <h1>Vamos conhecer melhor <br class="br-desktop"><span class="grad-text">o seu negócio.</span></h1>
+          <p class="briefing-sub">Suas respostas vão nos ajudar a entender sua empresa, seu público e seus objetivos para criarmos uma Landing Page alinhada ao seu negócio.</p>
+          <div class="briefing-meta">
+            <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> Leva aproximadamente 5–10 minutos.</span>
+            <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg> Não se preocupe com termos técnicos. Queremos conhecer o seu negócio do seu jeito.</span>
+          </div>
+        </div>
+
+        <!-- Formulário Container -->
+        <div class="briefing-container" id="briefing-container">
+          <!-- Progresso -->
+          <div class="briefing-progress">
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" id="progress-bar"></div>
+            </div>
+            <div class="progress-info">
+              <span class="step-label" id="step-label">Etapa 1 de 6 · Empresa</span>
+              <span class="save-status">Seu progresso é salvo automaticamente neste dispositivo.</span>
+            </div>
+          </div>
+
+          <form id="briefing-form" novalidate>
+            
+            <!-- ETAPA 1: EMPRESA -->
+            <div class="step-content active" data-step="1">
+              <div class="step-header">
+                <h2>Primeiro, queremos conhecer sua empresa.</h2>
+                <p>Conte o básico para entendermos o seu negócio.</p>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="empresa_nome">Nome da empresa <span class="req">*</span></label>
+                  <input type="text" id="empresa_nome" name="empresa_nome" required>
+                  <span class="error-msg">Este campo é obrigatório.</span>
+                </div>
+                <div class="form-group">
+                  <label for="empresa_fantasia">Nome fantasia</label>
+                  <input type="text" id="empresa_fantasia" name="empresa_fantasia">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="empresa_cnpj">CNPJ</label>
+                  <input type="text" id="empresa_cnpj" name="empresa_cnpj">
+                </div>
+                <div class="form-group">
+                  <label for="empresa_segmento">Segmento / ramo de atuação <span class="req">*</span></label>
+                  <input type="text" id="empresa_segmento" name="empresa_segmento" required>
+                  <span class="error-msg">Este campo é obrigatório.</span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="empresa_cidade_estado">Cidade / Estado</label>
+                  <input type="text" id="empresa_cidade_estado" name="empresa_cidade_estado">
+                </div>
+                <div class="form-group">
+                  <label for="empresa_site">Site atual, caso possua</label>
+                  <input type="url" id="empresa_site" name="empresa_site" placeholder="https://...">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="empresa_o_que_faz">O que sua empresa faz? <span class="req">*</span></label>
+                <textarea id="empresa_o_que_faz" name="empresa_o_que_faz" required rows="3"></textarea>
+                <span class="helper-text">Explique com suas palavras o que a empresa oferece e como ela ajuda seus clientes.</span>
+                <span class="error-msg">Este campo é obrigatório.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="empresa_produtos">Quais são os principais produtos ou serviços?</label>
+                <textarea id="empresa_produtos" name="empresa_produtos" rows="3"></textarea>
+                <span class="helper-text">Liste os produtos ou serviços que você considera mais importantes.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="empresa_diferencial">Por que um cliente deveria escolher sua empresa e não um concorrente?</label>
+                <textarea id="empresa_diferencial" name="empresa_diferencial" rows="3"></textarea>
+                <span class="helper-text">Pode falar sobre atendimento, experiência, preço, qualidade, velocidade, garantia ou qualquer outro diferencial.</span>
+              </div>
+            </div>
+
+            <!-- ETAPA 2: LANDING PAGE -->
+            <div class="step-content" data-step="2" hidden>
+              <div class="step-header">
+                <h2>O que essa página precisa alcançar?</h2>
+              </div>
+
+              <fieldset class="form-group">
+                <legend>Qual é o principal objetivo da Landing Page? <span class="req">*</span></legend>
+                <div class="cards-grid" role="group" aria-label="Objetivo da Landing Page">
+                  <label class="selectable-card">
+                    <input type="radio" name="lp_objetivo" value="Receber pedidos de orçamento" required>
+                    <span class="card-content">Receber pedidos de orçamento</span>
+                  </label>
+                  <label class="selectable-card">
+                    <input type="radio" name="lp_objetivo" value="Gerar contatos pelo WhatsApp">
+                    <span class="card-content">Gerar contatos pelo WhatsApp</span>
+                  </label>
+                  <label class="selectable-card">
+                    <input type="radio" name="lp_objetivo" value="Apresentar um produto">
+                    <span class="card-content">Apresentar um produto</span>
+                  </label>
+                  <label class="selectable-card">
+                    <input type="radio" name="lp_objetivo" value="Apresentar um serviço">
+                    <span class="card-content">Apresentar um serviço</span>
+                  </label>
+                  <label class="selectable-card">
+                    <input type="radio" name="lp_objetivo" value="Captar interessados">
+                    <span class="card-content">Captar interessados</span>
+                  </label>
+                  <label class="selectable-card">
+                    <input type="radio" name="lp_objetivo" value="Divulgar uma promoção ou campanha">
+                    <span class="card-content">Divulgar uma promoção ou campanha</span>
+                  </label>
+                  <label class="selectable-card">
+                    <input type="radio" name="lp_objetivo" value="Apresentar a empresa">
+                    <span class="card-content">Apresentar a empresa</span>
+                  </label>
+                  <label class="selectable-card">
+                    <input type="radio" name="lp_objetivo" value="Outro" id="lp_objetivo_outro">
+                    <span class="card-content">Outro</span>
+                  </label>
+                </div>
+                <div class="conditional-field" id="lp_objetivo_outro_field" hidden>
+                  <label for="lp_objetivo_outro_texto">Qual o objetivo?</label>
+                  <input type="text" id="lp_objetivo_outro_texto" name="lp_objetivo_outro_texto">
+                </div>
+                <span class="error-msg" id="err_lp_objetivo">Este campo é obrigatório.</span>
+              </fieldset>
+
+              <div class="form-group">
+                <label for="lp_destaque">Qual produto ou serviço será o principal destaque da página? <span class="req">*</span></label>
+                <textarea id="lp_destaque" name="lp_destaque" rows="2" required></textarea>
+                <span class="error-msg">Este campo é obrigatório.</span>
+              </div>
+
+              <fieldset class="form-group">
+                <legend>Quando alguém entrar na página, qual é a principal ação que você quer que essa pessoa realize? <span class="req">*</span></legend>
+                <div class="cards-grid">
+                  <label class="selectable-card">
+                    <input type="radio" name="lp_acao" value="Chamar no WhatsApp" required>
+                    <span class="card-content">Chamar no WhatsApp</span>
+                  </label>
+                  <label class="selectable-card">
+                    <input type="radio" name="lp_acao" value="Solicitar orçamento">
+                    <span class="card-content">Solicitar orçamento</span>
+                  </label>
+                  <label class="selectable-card">
+                    <input type="radio" name="lp_acao" value="Preencher formulário">
+                    <span class="card-content">Preencher formulário</span>
+                  </label>
+                  <label class="selectable-card">
+                    <input type="radio" name="lp_acao" value="Telefonar">
+                    <span class="card-content">Telefonar</span>
+                  </label>
+                  <label class="selectable-card">
+                    <input type="radio" name="lp_acao" value="Comprar / contratar">
+                    <span class="card-content">Comprar / contratar</span>
+                  </label>
+                  <label class="selectable-card">
+                    <input type="radio" name="lp_acao" value="Conhecer melhor o produto ou serviço">
+                    <span class="card-content">Conhecer melhor o produto ou serviço</span>
+                  </label>
+                  <label class="selectable-card">
+                    <input type="radio" name="lp_acao" value="Outra" id="lp_acao_outra">
+                    <span class="card-content">Outra</span>
+                  </label>
+                </div>
+                <div class="conditional-field" id="lp_acao_outra_field" hidden>
+                  <label for="lp_acao_outra_texto">Qual a ação?</label>
+                  <input type="text" id="lp_acao_outra_texto" name="lp_acao_outra_texto">
+                </div>
+                <span class="error-msg" id="err_lp_acao">Este campo é obrigatório.</span>
+              </fieldset>
+
+              <div class="form-group">
+                <label for="lp_oferta">Existe alguma oferta, condição ou informação que precisa ganhar destaque?</label>
+                <textarea id="lp_oferta" name="lp_oferta" rows="2"></textarea>
+                <span class="helper-text">Ex.: orçamento gratuito, primeira consulta grátis, desconto, entrega rápida, atendimento 24 horas etc.</span>
+              </div>
+
+              <div class="form-group form-group-sm">
+                <label for="lp_prazo">Existe alguma data importante para essa página estar no ar?</label>
+                <input type="date" id="lp_prazo" name="lp_prazo">
+              </div>
+            </div>
+
+            <!-- ETAPA 3: PÚBLICO -->
+            <div class="step-content" data-step="3" hidden>
+              <div class="step-header">
+                <h2>Quem queremos alcançar?</h2>
+                <p>Quanto melhor entendermos seu cliente, melhor conseguimos construir a comunicação da página.</p>
+              </div>
+
+              <div class="form-group">
+                <label for="pub_quem">Quem normalmente compra ou contrata sua empresa? <span class="req">*</span></label>
+                <textarea id="pub_quem" name="pub_quem" rows="3" required></textarea>
+                <span class="helper-text">Descreva seu cliente ideal com suas próprias palavras.</span>
+                <span class="error-msg">Este campo é obrigatório.</span>
+              </div>
+
+              <fieldset class="form-group">
+                <legend>Seu cliente é principalmente:</legend>
+                <div class="cards-grid cards-grid-3">
+                  <label class="selectable-card">
+                    <input type="radio" name="pub_tipo" value="Pessoa física">
+                    <span class="card-content">Pessoa física</span>
+                  </label>
+                  <label class="selectable-card">
+                    <input type="radio" name="pub_tipo" value="Empresas">
+                    <span class="card-content">Empresas</span>
+                  </label>
+                  <label class="selectable-card">
+                    <input type="radio" name="pub_tipo" value="Ambos">
+                    <span class="card-content">Ambos</span>
+                  </label>
+                </div>
+              </fieldset>
+
+              <fieldset class="form-group">
+                <legend>Qual região sua empresa atende?</legend>
+                <div class="cards-grid">
+                  <label class="selectable-card">
+                    <input type="radio" name="pub_regiao" value="Apenas minha cidade">
+                    <span class="card-content">Apenas minha cidade</span>
+                  </label>
+                  <label class="selectable-card">
+                    <input type="radio" name="pub_regiao" value="Minha cidade e região">
+                    <span class="card-content">Minha cidade e região</span>
+                  </label>
+                  <label class="selectable-card">
+                    <input type="radio" name="pub_regiao" value="Todo o estado">
+                    <span class="card-content">Todo o estado</span>
+                  </label>
+                  <label class="selectable-card">
+                    <input type="radio" name="pub_regiao" value="Todo o Brasil">
+                    <span class="card-content">Todo o Brasil</span>
+                  </label>
+                  <label class="selectable-card">
+                    <input type="radio" name="pub_regiao" value="Internacional">
+                    <span class="card-content">Internacional</span>
+                  </label>
+                  <label class="selectable-card">
+                    <input type="radio" name="pub_regiao" value="Outra região" id="pub_regiao_outra">
+                    <span class="card-content">Outra região</span>
+                  </label>
+                </div>
+                <div class="conditional-field" id="pub_regiao_outra_field" hidden>
+                  <label for="pub_regiao_outra_texto">Qual a região?</label>
+                  <input type="text" id="pub_regiao_outra_texto" name="pub_regiao_outra_texto">
+                </div>
+              </fieldset>
+
+              <div class="form-group">
+                <label for="pub_problema">Qual problema ou necessidade normalmente faz esse cliente procurar sua empresa?</label>
+                <textarea id="pub_problema" name="pub_problema" rows="2"></textarea>
+              </div>
+
+              <fieldset class="form-group">
+                <legend>O que costuma ser mais importante para esse cliente na hora de escolher?</legend>
+                <div class="cards-grid">
+                  <label class="selectable-card checkbox-card">
+                    <input type="checkbox" name="pub_importante" value="Preço">
+                    <span class="card-content">Preço</span>
+                  </label>
+                  <label class="selectable-card checkbox-card">
+                    <input type="checkbox" name="pub_importante" value="Qualidade">
+                    <span class="card-content">Qualidade</span>
+                  </label>
+                  <label class="selectable-card checkbox-card">
+                    <input type="checkbox" name="pub_importante" value="Confiança">
+                    <span class="card-content">Confiança</span>
+                  </label>
+                  <label class="selectable-card checkbox-card">
+                    <input type="checkbox" name="pub_importante" value="Rapidez">
+                    <span class="card-content">Rapidez</span>
+                  </label>
+                  <label class="selectable-card checkbox-card">
+                    <input type="checkbox" name="pub_importante" value="Experiência">
+                    <span class="card-content">Experiência</span>
+                  </label>
+                  <label class="selectable-card checkbox-card">
+                    <input type="checkbox" name="pub_importante" value="Atendimento">
+                    <span class="card-content">Atendimento</span>
+                  </label>
+                  <label class="selectable-card checkbox-card">
+                    <input type="checkbox" name="pub_importante" value="Garantia">
+                    <span class="card-content">Garantia</span>
+                  </label>
+                  <label class="selectable-card checkbox-card">
+                    <input type="checkbox" name="pub_importante" value="Facilidade">
+                    <span class="card-content">Facilidade</span>
+                  </label>
+                  <label class="selectable-card checkbox-card">
+                    <input type="checkbox" name="pub_importante" value="Localização">
+                    <span class="card-content">Localização</span>
+                  </label>
+                  <label class="selectable-card checkbox-card">
+                    <input type="checkbox" name="pub_importante" value="Outro" id="pub_importante_outro">
+                    <span class="card-content">Outro</span>
+                  </label>
+                </div>
+                <div class="conditional-field" id="pub_importante_outro_field" hidden>
+                  <label for="pub_importante_outro_texto">Qual?</label>
+                  <input type="text" id="pub_importante_outro_texto" name="pub_importante_outro_texto">
+                </div>
+              </fieldset>
+            </div>
+
+            <!-- ETAPA 4: CONTEÚDO -->
+            <div class="step-content" data-step="4" hidden>
+              <div class="step-header">
+                <h2>O que precisamos mostrar?</h2>
+                <p>Agora vamos entender quais informações são importantes para convencer o visitante.</p>
+              </div>
+
+              <fieldset class="form-group">
+                <legend>Quais informações você considera essenciais na página?</legend>
+                <div class="cards-grid">
+                  <label class="selectable-card checkbox-card">
+                    <input type="checkbox" name="cont_essenciais" value="História / apresentação da empresa">
+                    <span class="card-content">História / apresentação</span>
+                  </label>
+                  <label class="selectable-card checkbox-card">
+                    <input type="checkbox" name="cont_essenciais" value="Produtos">
+                    <span class="card-content">Produtos</span>
+                  </label>
+                  <label class="selectable-card checkbox-card">
+                    <input type="checkbox" name="cont_essenciais" value="Serviços">
+                    <span class="card-content">Serviços</span>
+                  </label>
+                  <label class="selectable-card checkbox-card">
+                    <input type="checkbox" name="cont_essenciais" value="Benefícios">
+                    <span class="card-content">Benefícios</span>
+                  </label>
+                  <label class="selectable-card checkbox-card">
+                    <input type="checkbox" name="cont_essenciais" value="Diferenciais">
+                    <span class="card-content">Diferenciais</span>
+                  </label>
+                  <label class="selectable-card checkbox-card">
+                    <input type="checkbox" name="cont_essenciais" value="Como funciona">
+                    <span class="card-content">Como funciona</span>
+                  </label>
+                  <label class="selectable-card checkbox-card">
+                    <input type="checkbox" name="cont_essenciais" value="Depoimentos de clientes">
+                    <span class="card-content">Depoimentos</span>
+                  </label>
+                  <label class="selectable-card checkbox-card">
+                    <input type="checkbox" name="cont_essenciais" value="Perguntas frequentes">
+                    <span class="card-content">Perguntas frequentes</span>
+                  </label>
+                  <label class="selectable-card checkbox-card">
+                    <input type="checkbox" name="cont_essenciais" value="Localização">
+                    <span class="card-content">Localização</span>
+                  </label>
+                  <label class="selectable-card checkbox-card">
+                    <input type="checkbox" name="cont_essenciais" value="Formas de contato">
+                    <span class="card-content">Formas de contato</span>
+                  </label>
+                  <label class="selectable-card checkbox-card">
+                    <input type="checkbox" name="cont_essenciais" value="Garantias">
+                    <span class="card-content">Garantias</span>
+                  </label>
+                  <label class="selectable-card checkbox-card">
+                    <input type="checkbox" name="cont_essenciais" value="Resultados / números">
+                    <span class="card-content">Resultados / números</span>
+                  </label>
+                  <label class="selectable-card checkbox-card">
+                    <input type="checkbox" name="cont_essenciais" value="Outra informação" id="cont_essenciais_outra">
+                    <span class="card-content">Outra informação</span>
+                  </label>
+                </div>
+                <div class="conditional-field" id="cont_essenciais_outra_field" hidden>
+                  <label for="cont_essenciais_outra_texto">Qual informação?</label>
+                  <input type="text" id="cont_essenciais_outra_texto" name="cont_essenciais_outra_texto">
+                </div>
+              </fieldset>
+
+              <div class="form-group">
+                <label for="cont_beneficios">Quais são os principais benefícios do seu produto ou serviço?</label>
+                <textarea id="cont_beneficios" name="cont_beneficios" rows="2"></textarea>
+                <span class="helper-text">Em vez de apenas características, pense no que o cliente ganha ao contratar ou comprar.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="cont_diferenciais">Quais são os principais diferenciais da empresa?</label>
+                <textarea id="cont_diferenciais" name="cont_diferenciais" rows="2"></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="cont_obrigatorio">Existe alguma informação que obrigatoriamente precisa aparecer na página?</label>
+                <textarea id="cont_obrigatorio" name="cont_obrigatorio" rows="2"></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="cont_duvidas">Existem dúvidas que seus clientes fazem com frequência?</label>
+                <textarea id="cont_duvidas" name="cont_duvidas" rows="2"></textarea>
+                <span class="helper-text">Essas respostas podem nos ajudar a criar uma seção de perguntas frequentes.</span>
+              </div>
+
+              <div class="sub-section">
+                <h3>Como seus clientes podem encontrar você?</h3>
+                <p class="helper-text" style="margin-bottom: 20px;">Preencha somente as informações que você deseja disponibilizar na Landing Page.</p>
+                
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="contato_whatsapp">WhatsApp</label>
+                    <input type="text" id="contato_whatsapp" name="contato_whatsapp">
+                  </div>
+                  <div class="form-group">
+                    <label for="contato_telefone">Telefone</label>
+                    <input type="text" id="contato_telefone" name="contato_telefone">
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="contato_email">E-mail comercial</label>
+                    <input type="email" id="contato_email" name="contato_email">
+                  </div>
+                  <div class="form-group">
+                    <label for="contato_horario">Horário de atendimento</label>
+                    <input type="text" id="contato_horario" name="contato_horario" placeholder="Ex: Seg a Sex, das 8h às 18h">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="contato_endereco">Endereço</label>
+                  <input type="text" id="contato_endereco" name="contato_endereco">
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="contato_instagram">Instagram</label>
+                    <input type="text" id="contato_instagram" name="contato_instagram">
+                  </div>
+                  <div class="form-group">
+                    <label for="contato_facebook">Facebook</label>
+                    <input type="text" id="contato_facebook" name="contato_facebook">
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="contato_linkedin">LinkedIn</label>
+                    <input type="text" id="contato_linkedin" name="contato_linkedin">
+                  </div>
+                  <div class="form-group">
+                    <label for="contato_outra_rede">Outra rede social</label>
+                    <input type="text" id="contato_outra_rede" name="contato_outra_rede">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ETAPA 5: VISUAL -->
+            <div class="step-content" data-step="5" hidden>
+              <div class="step-header">
+                <h2>Qual estilo combina com sua empresa?</h2>
+              </div>
+
+              <fieldset class="form-group">
+                <legend>Sua empresa já possui uma identidade visual definida?</legend>
+                <div class="cards-grid cards-grid-3">
+                  <label class="selectable-card">
+                    <input type="radio" name="vis_identidade" value="Sim">
+                    <span class="card-content">Sim</span>
+                  </label>
+                  <label class="selectable-card">
+                    <input type="radio" name="vis_identidade" value="Parcialmente">
+                    <span class="card-content">Parcialmente</span>
+                  </label>
+                  <label class="selectable-card">
+                    <input type="radio" name="vis_identidade" value="Não">
+                    <span class="card-content">Não</span>
+                  </label>
+                </div>
+              </fieldset>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="vis_cores">Quais são as principais cores da sua marca?</label>
+                  <input type="text" id="vis_cores" name="vis_cores" placeholder="Ex.: azul escuro, branco e dourado">
+                </div>
+                <div class="form-group">
+                  <label for="vis_cores_evitar">Existe alguma cor que devemos evitar?</label>
+                  <input type="text" id="vis_cores_evitar" name="vis_cores_evitar">
+                </div>
+              </div>
+
+              <fieldset class="form-group">
+                <legend>Como você gostaria que a página fosse percebida?</legend>
+                <div class="cards-grid">
+                  <label class="selectable-card checkbox-card">
+                    <input type="checkbox" name="vis_percepcao" value="Moderna">
+                    <span class="card-content">Moderna</span>
+                  </label>
+                  <label class="selectable-card checkbox-card">
+                    <input type="checkbox" name="vis_percepcao" value="Profissional">
+                    <span class="card-content">Profissional</span>
+                  </label>
+                  <label class="selectable-card checkbox-card">
+                    <input type="checkbox" name="vis_percepcao" value="Minimalista">
+                    <span class="card-content">Minimalista</span>
+                  </label>
+                  <label class="selectable-card checkbox-card">
+                    <input type="checkbox" name="vis_percepcao" value="Elegante">
+                    <span class="card-content">Elegante</span>
+                  </label>
+                  <label class="selectable-card checkbox-card">
+                    <input type="checkbox" name="vis_percepcao" value="Tecnológica">
+                    <span class="card-content">Tecnológica</span>
+                  </label>
+                  <label class="selectable-card checkbox-card">
+                    <input type="checkbox" name="vis_percepcao" value="Sofisticada">
+                    <span class="card-content">Sofisticada</span>
+                  </label>
+                  <label class="selectable-card checkbox-card">
+                    <input type="checkbox" name="vis_percepcao" value="Amigável">
+                    <span class="card-content">Amigável</span>
+                  </label>
+                  <label class="selectable-card checkbox-card">
+                    <input type="checkbox" name="vis_percepcao" value="Séria">
+                    <span class="card-content">Séria</span>
+                  </label>
+                  <label class="selectable-card checkbox-card">
+                    <input type="checkbox" name="vis_percepcao" value="Premium">
+                    <span class="card-content">Premium</span>
+                  </label>
+                  <label class="selectable-card checkbox-card">
+                    <input type="checkbox" name="vis_percepcao" value="Simples e direta">
+                    <span class="card-content">Simples e direta</span>
+                  </label>
+                </div>
+              </fieldset>
+
+              <div class="form-group references-group">
+                <legend>Existe algum site que você gosta visualmente?</legend>
+                
+                <div id="references-container">
+                  <div class="reference-item">
+                    <div class="form-group">
+                      <label for="vis_ref_url_1">URL do site</label>
+                      <input type="url" id="vis_ref_url_1" name="vis_ref_url_1" placeholder="https://...">
+                    </div>
+                    <div class="form-group">
+                      <label for="vis_ref_motivo_1">O que você gosta nesse site?</label>
+                      <input type="text" id="vis_ref_motivo_1" name="vis_ref_motivo_1">
+                    </div>
+                  </div>
+                </div>
+
+                <button type="button" class="btn btn--ghost btn--sm btn-add-ref" id="btn-add-ref">
+                  + Adicionar outra referência
+                </button>
+              </div>
+
+              <div class="form-group">
+                <label for="vis_evitar">Existe algum estilo, cor ou elemento que você NÃO gostaria de ver na página?</label>
+                <textarea id="vis_evitar" name="vis_evitar" rows="2"></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="vis_observacao">Existe alguma observação sobre a aparência da página?</label>
+                <textarea id="vis_observacao" name="vis_observacao" rows="2"></textarea>
+              </div>
+            </div>
+
+            <!-- ETAPA 6: FINALIZAÇÃO -->
+            <div class="step-content" data-step="6" hidden>
+              <div class="step-header">
+                <h2>Últimos detalhes.</h2>
+                <p>Precisamos apenas saber com quem falar durante o desenvolvimento.</p>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="resp_nome">Nome do responsável pelo projeto <span class="req">*</span></label>
+                  <input type="text" id="resp_nome" name="resp_nome" required>
+                  <span class="error-msg">Este campo é obrigatório.</span>
+                </div>
+                <div class="form-group">
+                  <label for="resp_cargo">Cargo / função</label>
+                  <input type="text" id="resp_cargo" name="resp_cargo">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="resp_email">E-mail <span class="req">*</span></label>
+                  <input type="email" id="resp_email" name="resp_email" required>
+                  <span class="error-msg">Insira um e-mail válido.</span>
+                </div>
+                <div class="form-group">
+                  <label for="resp_whatsapp">WhatsApp <span class="req">*</span></label>
+                  <input type="text" id="resp_whatsapp" name="resp_whatsapp" required>
+                  <span class="error-msg">Este campo é obrigatório.</span>
+                </div>
+              </div>
+
+              <div class="form-group" style="margin-top: 32px">
+                <label for="resp_concorrentes">Quais são os principais concorrentes da empresa?</label>
+                <textarea id="resp_concorrentes" name="resp_concorrentes" rows="2"></textarea>
+                <span class="helper-text">Você pode informar nomes ou links dos sites.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="resp_extra">Existe mais alguma informação que você considera importante para o desenvolvimento da Landing Page?</label>
+                <textarea id="resp_extra" name="resp_extra" rows="4"></textarea>
+              </div>
+
+              <div class="form-group terms-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="aceite_termos" name="aceite_termos" required>
+                  <span class="checkbox-custom">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </span>
+                  <span class="checkbox-text">Confirmo que as informações fornecidas neste briefing podem ser utilizadas pela PGM Tecnologia no desenvolvimento deste projeto. <span class="req">*</span></span>
+                </label>
+                <span class="error-msg" id="err_aceite">Você precisa confirmar esta opção para enviar o briefing.</span>
+              </div>
+
+              <div class="review-message">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                <p>Revise suas respostas antes de enviar. Você pode voltar para qualquer etapa sem perder o que já preencheu.</p>
+              </div>
+            </div>
+
+            <!-- Botões de Ação -->
+            <div class="form-actions">
+              <button type="button" class="btn btn--ghost" id="btn-prev" hidden>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"></path></svg> 
+                Voltar
+              </button>
+              <div style="flex:1"></div>
+              <button type="button" class="btn btn--primary" id="btn-next">
+                Continuar 
+                <svg class="arr" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+              </button>
+              <button type="submit" class="btn btn--primary" id="btn-submit" hidden>
+                Enviar briefing 
+                <svg class="arr" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+              </button>
+            </div>
+            
+          </form>
+        </div>
+
+        <!-- Tela de Sucesso (Oculta por padrão) -->
+        <div class="briefing-success" id="briefing-success" hidden>
+          <div class="success-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          </div>
+          <h2>Briefing concluído!</h2>
+          <p>Obrigado por compartilhar essas informações. Agora temos uma visão mais clara da sua empresa, do seu público e do que sua Landing Page precisa alcançar.</p>
+          <div class="success-meta">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+            <p>Se precisarmos confirmar algum detalhe, entraremos em contato com o responsável informado.</p>
+          </div>
+          <a href="index.html" class="btn btn--primary" style="margin-top: 32px">Voltar para o site</a>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="foot" style="padding-top: 32px">
+      <div class="wrap">
+        <div class="foot__bar" style="margin-top: 0; border-top: none;">
+          <span>© <span id="ano">2026</span> PGM Tecnologia. Todos os direitos reservados.</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="assets/js/briefing.js" defer></script>
+</body>
+</html>
